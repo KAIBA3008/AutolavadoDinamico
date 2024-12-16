@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AD587984-547E-439E-AD00-D78F4D18EF0A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AutolavadoMaldicion</RootNamespace>
+    <AssemblyName>AutolavadoMaldicion</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin2Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin2Framework.1.0.0\lib\net472\MaterialSkin2Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="ClienteReserva.cs" />
+    <Compile Include="Cola2.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NODO.cs" />
+    <Compile Include="NODOSTRING.cs" />
+    <Compile Include="PilaString2.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TVprincipal.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Estante.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TV4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartel1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartel2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cartel3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gif_1_TV4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gif_1_TV2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gif1_TV3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exito.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gif_1_TVPrincipal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lavado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aspirado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secado.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cauchos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rueda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rayon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libro Abierto Prime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libro Abierto Prime1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camioneta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camioneta2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camioneta3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lavado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aspirado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Secado1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aceite1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cauchos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroVerde.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroRojo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroMarron.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla1Cambio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla2Cambio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla2Prime.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla2Cambio1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla2PrimeCambio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerillaPrime1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PerillaPrime1Cambio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Perilla2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagina.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pagina2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Biblioteca.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marcador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroPagar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroPagar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroPagar3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Libropagos4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MarcadorVerde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SonidoFondo.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SonidoTV.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroPagos5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LibroPagos6.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
